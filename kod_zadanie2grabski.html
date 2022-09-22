@@ -1,0 +1,69 @@
+<head>
+<script type="text/javascript">
+function okno_zamknij_grabski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+kod zadanie2grabski.html<br>
+<textarea cols="100" rows="22">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Zadanie2</title>
+<script type="text/javascript">
+function WinOpen_grabski()
+{
+window.open("przyklad1a.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=660,top=500,left=900");
+}
+</script>
+</head>
+<body>
+<!--Grabski 3G -->
+<form>
+<input type="button" name="przycisk" value="Naciśnij mnie!" onclick="WinOpen_grabski('')">
+</form>
+</body>
+</html>
+</textarea><br><br><br>
+kod przyklad1a.html<br>
+<textarea cols="100" rows="36">
+<html>
+<head>
+<script type="text/javascript">
+function grafika1_grabski()
+{
+window.open("grafika1.html","okienko1","toolbar=no,directories=no,menubar=no,height=280,width=180,top=50,left=20");
+}
+function grafika2_grabski()
+{
+window.open("grafika2.html","okienko2","toolbar=no,directories=no,menubar=no,height=280,width=180,top=900,left=20");
+}
+function grafika3_grabski()
+{
+window.open("grafika3.html","okienko3","toolbar=no,directories=no,menubar=no,height=280,width=180,top=50,left=3000");
+}
+function grafika4_grabski()
+{
+window.open("grafika4.html","okienko4","toolbar=no,directories=no,menubar=no,height=280,width=180,top=900,left=3000");
+}
+</script>
+</head>
+<body>
+<!--Grabski 3G -->
+<form>
+<input type="button" name="przycisk" value="grafika1" onclick="grafika1_grabski('')">
+<input type="button" name="przycisk" value="grafika2" onclick="grafika2_grabski('')">
+<input type="button" name="przycisk" value="grafika3" onclick="grafika3_grabski('')">
+<input type="button" name="przycisk" value="grafika4" onclick="grafika4_grabski('')">
+</form>
+</body>
+</html>
+</textarea><br><br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_grabski()"/>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <body>
+    <div style="color:red;font-size:50px;">
+     <script language="JavaScript">
+       var liczba1=prompt("podaj C=","");
+       var liczba2=prompt("podaj B=","");
+       var c_gra=parseFloat(liczba1);
+       var b_gra=parseFloat(liczba2);
+document.write("C="+c_gra.toFixed(2)+" cm"+"<br>");
+document.write("B="+b_gra.toFixed(2)+" cm"+"<br>");
+var a_gra=Math.sqrt(Math.pow(c_gra,2)-Math.pow(b_gra,2));
+document.write("a="+a_gra.toFixed(2)+" cm"+"<br>");
+var obw=a_gra+b_gra+c_gra;
+var pole=(b_gra*a_gra)/2;
+document.write("Obw="+obw.toFixed(2)+" cm"+"<br>");
+document.write("Pole="+pole.toFixed(2)+" cm"+"<br>");
+sin_alfa_gra=b_gra/c_gra;
+document.write("sin(a)="+sin_alfa_gra.toFixed(3)+" cm"+"<br>");
+cos_alfa_gra=a_gra/c_gra;
+document.write("cos(a)="+cos_alfa_gra.toFixed(3)+" cm"+"<br>");
+tg_alfa_gra=b_gra/a_gra;
+document.write("tg(a)="+tg_alfa_gra.toFixed(3)+" cm"+"<br>");
+ctg_alfa_gra=a_gra/b_gra;
+document.write("ctg(a)="+ctg_alfa_gra.toFixed(3)+" cm"+"<br>");
+alfa_gra=Math.asin(b_gra/c_gra)*(180/Math.PI);
+document.write("alfa="+alfa_gra.toFixed(2)+" st"+"<br>");
+beta_gra=90-alfa_gra;
+document.write("beta="+beta_gra.toFixed(2)+" st"+"<br>");
+</script>
+</div>
+</body>
+</html>

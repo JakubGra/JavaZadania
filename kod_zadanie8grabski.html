@@ -1,0 +1,32 @@
+<head>
+<script type="text/javascript">
+function okno_zamknij_grabski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+kod zadanie8grabski.html<br>
+<textarea cols="100" rows="22">
+<html>
+ <body>
+  <div style="color:green;font-size:45px;">
+  <script language="JavaScript">
+   var dzień1=prompt("dzień1=","");
+   var dzień2=prompt("dzień2=","");
+   var ilosc_sekund_gra;
+   var D1_gra=parseFloat(dzień1);
+   var D2_gra=parseFloat(dzień2);
+     ilosc_sekund_gra=(D1_gra-D2_gra)*24*3600;
+     document.write("sekundy="+ilosc_sekund_gra+" sekund"+"<br>");
+     document.write("dzień1="+D1_gra+" dni"+"<br>");
+     document.write("dzień2="+D2_gra+" dni"+"<br>");
+  </script>
+  </div>
+ </body>
+</html>
+</textarea><br><br><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_grabski()"/>
+</body>
+</html>

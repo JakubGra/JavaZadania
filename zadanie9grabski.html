@@ -1,0 +1,22 @@
+<html>
+ <body>
+  <div style="color:green;font-size:45px;">
+  <script language="JavaScript">
+   var dzień1=prompt("dzień1=","");
+   var dzień2=prompt("dzień2=","");
+   var godz1 = prompt("godz1=", "");
+   var godz2 = prompt("godz2=", "");
+   var D1_gra=parseFloat(dzień1);
+   var D2_gra=parseFloat(dzień2);
+   var G1_gra=parseFloat(godz1);
+   var G2_gra=parseFloat(godz2);
+	ilosc_sekund_gra=(D1_gra-D2_gra)*86400+(G1_gra-G2_gra)*3600;
+	document.write("sekundy="+ilosc_sekund_gra+" sekund"+"<br>");
+        document.write("dzień1="+D1_gra+" dni"+"<br>");
+        document.write("dzień2="+D2_gra+" dni"+"<br>");
+	document.write("godz1="+G1_gra+" godz"+"<br>");
+        document.write("godz2="+G2_gra+" godz"+"<br>");
+</script>
+  </div>
+ </body>
+</html>
